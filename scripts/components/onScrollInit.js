@@ -53,7 +53,7 @@ function onScrollInit(items, trigger) {
           osElement.removeClass('animate__animated ' + osAnimationClass)
         }
       },
-      offset: '75%' // Ajusta el porcentaje para activar la animación
+      offset: '100%' // Ajusta el porcentaje para activar la animación
     })
 
     // Configuramos otro Waypoint para eliminar la clase cuando se salga del viewport
