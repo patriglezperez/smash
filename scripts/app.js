@@ -10,6 +10,8 @@ window.addEventListener('DOMContentLoaded', function () {
   onScrollInit($('.os-animation'))
   renderFAQ(faqData, 'faq-container')
   toggleTheme()
+  initializeStickyContact()
+  initializeStickyContactPulse()
 })
 
 // Function to manage the hamburger menu
@@ -428,7 +430,7 @@ function toggleFAQ(question) {
   }
 }
 
-// Función para alternate between Dark/Light Mode
+// Function to alternate between Dark/Light Mode
 function toggleTheme() {
   const themeToggleInput = document.querySelector('.theme__toggle input') // Captura el checkbox
   if (!themeToggleInput) {
@@ -452,4 +454,81 @@ function toggleTheme() {
 
 module.exports = {
   toggleTheme
+}
+
+//Contact Form
+function initializeStickyContact() {
+  const contactButton = document.getElementById('contactButton')
+  const contactModal = document.getElementById('contactModal')
+  const modalCloseButton = document.querySelector('.contact-modal__close')
+  const contactForm = document.getElementById('contactForm')
+  const contactSuccess = document.getElementById('contactSuccess')
+
+  if (
+    !contactButton ||
+    !contactModal ||
+    !modalCloseButton ||
+    !contactForm ||
+    !contactSuccess
+  ) {
+    console.error('Sticky contact elements not found.')
+    return
+  }
+
+  // Open the modal
+  contactButton.addEventListener('click', () => {
+    contactModal.classList.remove('hidden')
+    resetContactForm()
+  })
+
+  // Close the modal when clicking the close button
+  modalCloseButton.addEventListener('click', () => {
+    contactModal.classList.add('hidden')
+  })
+
+  // Close the modal when clicking outside the modal content
+  contactModal.addEventListener('click', (e) => {
+    if (e.target === contactModal) {
+      contactModal.classList.add('hidden')
+    }
+  })
+
+  // Handle form submission
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    // Hide the form and show the success message
+    contactForm.classList.add('hidden')
+    contactSuccess.classList.remove('hidden')
+
+    // Automatically close the modal after a few seconds
+    setTimeout(() => {
+      contactModal.classList.add('hidden')
+      resetContactForm()
+    }, 3000) // Close after 3 seconds
+  })
+
+  // Reset the form and success message
+  function resetContactForm() {
+    contactForm.reset()
+    contactForm.classList.remove('hidden')
+    contactSuccess.classList.add('hidden')
+  }
+}
+
+//Pulse for the contact button
+function initializeStickyContactPulse() {
+  const contactButton = document.getElementById('contactButton')
+
+  if (!contactButton) {
+    console.error('Sticky contact button not found.')
+    return
+  }
+
+  setInterval(() => {
+    contactButton.classList.add('pulsing')
+    setTimeout(() => {
+      contactButton.classList.remove('pulsing')
+    }, 1000) // Duración de la animación definida en CSS (1s en este caso)
+  }, 10000) // Cada 10 segundos
 }

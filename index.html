@@ -215,7 +215,33 @@
       <div id="faq-container" class="faq"></div>
     </div>
     
+    <!-- Sticky Contact Button -->
+    <div class="sticky-contact">
+      <button id="contactButton" class="sticky-contact__button button button--contact">
+        <img src="./src/images/contact.png" alt="">
+      </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal hidden">
+      <div class="contact-modal__content">
+        <button class="contact-modal__close">&times;</button>
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you. Drop us a message!</p>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required class="modal__input" />
+          <textarea placeholder="Your Message" required></textarea>
+          <p class="modal__error hidden">Please enter a valid email address.</p>
+          <button type="submit" class="button button--primary">Send</button>
+        </form>
+        <div id="contactSuccess" class="contact-modal__success hidden">
+          <p>Thank you! We will contact you as soon as possible.</p>
+        </div>
+      </div>
+    </div>
     
+
     
     
 </main> 
