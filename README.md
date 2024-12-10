@@ -1,30 +1,29 @@
 # Smash 🌟
 
-**Smash** es un proyecto web moderno que combina diseño intuitivo y funcionalidades avanzadas para ayudar a las empresas a alcanzar sus metas. Este proyecto se centra en ser completamente responsive, fácil de usar y personalizable.
+**Smash** is a modern web project that combines intuitive design and advanced features to help businesses achieve their goals. This project focuses on being fully responsive, user-friendly, and customizable.
 
-## 🚀 Características
+## 🚀 Features
 
-- **Diseño Responsivo:** Compatible con dispositivos móviles, tabletas y computadoras de escritorio.
-- **Tema Oscuro/Claro:** Alterna entre modos de tema para una experiencia personalizada.
-- **Sistema de Modal:** Incluye un modal funcional para capturar correos electrónicos.
-- **Acordeón Interactivo:** Para preguntas frecuentes, diseñado con accesibilidad en mente.
-- **Animaciones Suaves:** Integración de animaciones mediante `Animate.css` y `Waypoints`.
+- **Responsive Design:** Compatible with mobile devices, tablets, and desktops.
+- **Dark/Light Theme:** Toggle between themes for a personalized experience.
+- **Modal System:** Includes a functional modal to capture email addresses.
+- **Interactive Accordion:** For FAQs, designed with accessibility in mind.
+- **Smooth Animations:** Integration of animations using `Animate.css` and `Waypoints`.
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```plaintext
 /
-├── index.html           # Archivo principal de la página
+├── index.html           # Main page file
 ├── styles/
-│   ├── main.css         # Archivo CSS principal
-│   └── variables.css    # Variables de estilo y temas
+│   ├── main.css         # Main CSS file
+│   └── variables.css    # Style and theme variables
 ├── scripts/
-│   ├── app.js           # Funcionalidad principal de la página
+│   ├── app.js           # Main functionality script
 │   ├── components/
-│   │   ├── benefitsData.js  # Datos de la sección de beneficios
-│   │   ├── employees.js     # Datos de los empleados
-│   │   ├── opinions.js      # Opiniones de clientes
-│   │   └── faqData.js       # Preguntas frecuentes
-├── images/              # Recursos gráficos
-└── README.md            # Este archivo
-```
+│   │   ├── benefitsData.js  # Benefits section data
+│   │   ├── employees.js     # Employee data
+│   │   ├── opinions.js      # Customer reviews
+│   │   └── faqData.js       # Frequently Asked Questions
+├── images/              # Graphic assets
+└── README.md            # This file
