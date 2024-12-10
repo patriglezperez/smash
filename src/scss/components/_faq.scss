@@ -7,14 +7,14 @@
         font-size: var(--fs-hero-title);
         font-weight: bold;
         margin-bottom: 1rem;
-        color: #333;
+        // color: var(--text-color);
       }
 
       &__description {
         font-size: var(--fs-text);
         margin: auto;
         margin-bottom: 1.5rem;
-        color: $color-gray;
+        // color: var(--text-color);
       }
     }
   }
@@ -33,16 +33,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $light-text;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: lighten($light-bg, 10%);
       border-color: $secondary;
-    }
-
-    &:focus {
-      outline: 2px solid $primary;
-      outline-offset: 2px;
     }
   }
 
@@ -60,11 +57,11 @@
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     background-color: $color-white;
     padding: 0 1rem;
-    border-left: 2px solid $secondary;
+    border-left: 2px solid $primary;
 
     p {
       margin: 1rem 0;
-      color: $secondary;
+      color: $primary;
     }
   }
 

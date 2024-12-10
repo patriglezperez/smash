@@ -17,14 +17,14 @@
         font-size: var(--fs-hero-title);
         font-weight: bold;
         margin-bottom: 1rem;
-        color: #333;
+        color: var(--text-color);
       }
 
       &__description {
         font-size: var(--fs-text);
         margin: auto;
         margin-bottom: 1.5rem;
-        color: $color-gray;
+        color: var(--text-color);
       }
     }
   }
@@ -99,14 +99,14 @@
       font-size: var(--fs-fav);
       font-weight: bold;
       margin-block: 1rem;
-      color: #333;
+      color: var(--text-color);
     }
 
     p {
       font-size: var(--fs-text);
       margin: auto;
       margin-bottom: 1.5rem;
-      color: $color-gray;
+      color: var(--text-color);
     }
 
     @media (min-width: $lg) {
@@ -132,7 +132,7 @@
     font-size: var(--fs-hero-title);
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-color);
     padding-top: 3rem;
   }
 
@@ -141,7 +141,7 @@
     margin: auto;
     max-width: 300px;
     margin-bottom: 1.5rem;
-    color: $color-gray;
+    color: var(--text-color);
   }
 
   &__image {
@@ -166,7 +166,7 @@
         font-size: var(--fs-text);
         margin: auto;
         margin-bottom: 1.5rem;
-        color: $color-gray;
+        color: var(--text-color);
       }
     }
   }
@@ -250,7 +250,7 @@
     .employees {
       &__title {
         font-size: var(--fs-hero-title);
-        color: $light-text;
+        color: var(--text-color);
         text-align: center;
         margin-bottom: 1rem;
       }
@@ -259,7 +259,7 @@
         text-align: center;
         margin: auto;
         font-size: var(--fs-text);
-        color: $color-gray;
+        color: var(--text-color);
         max-width: $sm-container;
       }
     }

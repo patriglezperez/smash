@@ -2,7 +2,7 @@
   padding-block: 2rem;
   &__title {
     font-size: var(--fs-hero-title);
-    color: $light-text;
+    color: var(--text-color);
     text-align: center;
   }
   .swiper {

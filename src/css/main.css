@@ -159,13 +159,13 @@
   font-size: var(--fs-hero-title);
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text-color);
 }
 .cta__content .cta__description {
   font-size: var(--fs-text);
   margin: auto;
   margin-bottom: 1.5rem;
-  color: #5d5d5d;
+  color: var(--text-color);
 }
 
 .alternating-section {
@@ -237,13 +237,13 @@
   font-size: var(--fs-fav);
   font-weight: bold;
   margin-block: 1rem;
-  color: #333;
+  color: var(--text-color);
 }
 .alternating-section__text p {
   font-size: var(--fs-text);
   margin: auto;
   margin-bottom: 1.5rem;
-  color: #5d5d5d;
+  color: var(--text-color);
 }
 @media (min-width: 1024px) {
   .alternating-section__text {
@@ -267,7 +267,7 @@
   font-size: var(--fs-hero-title);
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text-color);
   padding-top: 3rem;
 }
 .content__description {
@@ -275,7 +275,7 @@
   margin: auto;
   max-width: 300px;
   margin-bottom: 1.5rem;
-  color: #5d5d5d;
+  color: var(--text-color);
 }
 .content__image {
   max-width: 400px;
@@ -298,7 +298,7 @@
   font-size: var(--fs-text);
   margin: auto;
   margin-bottom: 1.5rem;
-  color: #5d5d5d;
+  color: var(--text-color);
 }
 .benefits__list {
   display: grid;
@@ -375,7 +375,7 @@
 }
 .employees__text .employees__title {
   font-size: var(--fs-hero-title);
-  color: #121212;
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -383,7 +383,7 @@
   text-align: center;
   margin: auto;
   font-size: var(--fs-text);
-  color: #5d5d5d;
+  color: var(--text-color);
   max-width: 600px;
 }
 .employees-grid {
@@ -955,7 +955,7 @@ body {
 }
 .opinions__title {
   font-size: var(--fs-hero-title);
-  color: #121212;
+  color: var(--text-color);
   text-align: center;
 }
 .opinions .swiper {
@@ -1079,7 +1079,7 @@ body {
 }
 .modal__note {
   font-size: 0.8rem;
-  color: #5d5d5d;
+  color: var(--text-color);
   margin-top: 1rem;
 }
 .modal__error {
@@ -1109,13 +1109,11 @@ body {
   font-size: var(--fs-hero-title);
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
 }
 .faq__text .faq__description {
   font-size: var(--fs-text);
   margin: auto;
   margin-bottom: 1.5rem;
-  color: #5d5d5d;
 }
 .faq__item {
   margin-bottom: 1rem;
@@ -1130,15 +1128,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #121212;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-.faq__question:hover {
+.faq__question:hover, .faq__question:focus {
   background-color: white;
   border-color: #ffc435;
-}
-.faq__question:focus {
-  outline: 2px solid #b353cb;
-  outline-offset: 2px;
 }
 .faq .faq__icon {
   transition: transform 0.3s ease;
@@ -1152,11 +1147,11 @@ body {
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   background-color: #ffffff;
   padding: 0 1rem;
-  border-left: 2px solid #ffc435;
+  border-left: 2px solid #b353cb;
 }
 .faq__answer p {
   margin: 1rem 0;
-  color: #ffc435;
+  color: #b353cb;
 }
 .faq__answer--visible {
   max-height: 200px;
