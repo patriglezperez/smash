@@ -1,0 +1,8 @@
+# Ignore all PSD files in src/images/
+src/images/*.psd
+
+# Ignore other editable ones if necessary
+*.psd
+*.ai
+*.sketch
+*.xd
