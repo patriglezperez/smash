@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Global Reach: La agencia que está en todas partes. Diseño, datos y finanzas para llevar tu negocio al siguiente nivel.">
+  <title>Smash.</title>
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav">
+        <div class="header__content">
+
+          <div class="header__logo">
+            <img src="./src/images/smash--logo.png" alt="Logo Smash" class="header__logo-image" />
+          </div>
+
+          <button class="header__menu-toggle" aria-label="Abrir menú">
+            <span class="header__menu-icon"></span>
+          </button>
+  
+          <div class="header__overlay"></div>
+  
+          <div class="header__menu">
+            <button class="header__menu-close" aria-label="Cerrar menú">✕</button>
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a href="#" class="header__menu-link button button--normal">Iniciar Sesión</a></li>
+              <li class="header__menu-item"><a href="#" class="button button--primary">Registrarse</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="home">
+ 
+  
+  
+
+    <div class="hero container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">Create a unique<br> emotional story that<br> describes better<br> than words</h1>
+      
+        </div>
+        <div class="hero__text">
+          <p class="hero__description">Changing and overlapping them, ypu can quickly ilustrate an idea of your startup.</p>
+        </div>
+        <hr class="hero__divider">
+        <a href="#" class="hero__link">Want more? Explore other illustrations</a>
+      </div>
+      <img src="./src/images/Geo-location.svg" alt="imagen" class="hero__image">
+    </div>
+
+  
+
+    <div class="theme__toggle container">
+      <label class="switch">
+        <input type="checkbox" aria-label="Toggle dark mode">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    
+
+    <div class="benefits img-right--2">
+      <div class="benefits__intro  container">
+        <h2 class="benefits__title ">Why choose <span class="purple">us?<span class="purple">.</span></h2>
+        <p class="benefits__description">
+          Empower your business with a team that shares your vision. We deliver exceptional design, strategic growth solutions, and seamless communication tools to help you thrive.
+        </p>
+      </div>
+
+      <div id="benefits-container"></div>
+
+    </div>
+
+    <!-- <div class="container os-animation" data-os-animation="animate__fadeInUp" data-os-animation-delay="0.5s">
+      <h1 class="animate__animated">
+        Scroll to animate this text
+      </h1>
+    </div> -->
+    
+    
+    
+    <div class="cta img-center container">
+      <div class="cta__content ">
+        <h2 class="cta__title animated" data-os-animation="animate__bounce" data-os-animation-delay="0.4s">Achieve your goals today. <br> Unlimited possibilities <span class="purple">await.</span></h2>
+        <p class="cta__description">Ready to take your business to the next level? Let us help you achieve your vision.</p>
+        <a href="#" class="cta__button button button--primary">Explore more</a>
+      </div>
+    </div>
+
+
+    <section class="alternating-section img-center--2  ">
+      <!-- Bloque 1: Imagen + Texto -->
+      <div class="alternating-section__block ">
+        <img
+          src="./src/images/mobile-img-001_1.png"
+          alt="Responsive Design"
+          class="alternating-section__image alternating-section__image--001 border-bg "
+        />
+        <div class="alternating-section__text ">
+          <h3>Design for <br/><span class="yellow">every screen.</span></h3>
+          <p>Your website will look stunning on any device, big or small.</p>
+        </div>
+      </div>
+    
+      <!-- Bloque 2: Texto + Imagen -->
+      <div class="alternating-section__block alternating-section__block--reverse ">
+        <div class="alternating-section__text">
+          <h3><span class="yellow">Mobile-First</span><br/> Approach</h3>
+          <p>We prioritize seamless user experiences on mobile devices.</p>
+        </div>
+        <img
+        src="./src/images/mobile-img-002_2.png"
+          alt="Mobile First"
+          class="alternating-section__image alternating-section__image--002 border-bg"
+        />
+      </div>
+    
+      <!-- Bloque 3: Imagen + Texto -->
+      <div class="alternating-section__block ">
+        <img
+        src="./src/images/desktop-img-001_1.png"
+          alt="Device Compatibility"
+          class="alternating-section__image alternating-section__image--003 desktop-image"
+        />
+        <div class="alternating-section__text">
+          <h3>Cross-Device <br/><span class="yellow">Compatibility</span></h3>
+          <p>Effortless navigation and design across all platforms.</p>
+        </div>
+      </div>
+    
+      <!-- Bloque 4: Texto + Imagen -->
+      <div class="alternating-section__block alternating-section__block--reverse ">
+        <div class="alternating-section__text">
+          <h3><span class="yellow">Optimized</span><br/> Performance</h3>
+          <p>Faster load times and enhanced functionality for every user.</p>
+        </div>
+        <img
+        src="./src/images/mobile-img-003_1.png"
+          alt="Optimized Performance"
+          class="alternating-section__image alternating-section__image--004 border-bg"
+        />
+      </div>
+    </section>
+    
+    
+    
+    <!-- Modal -->
+    <div id="promo-modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+        <h3 class="modal__title">Claim Your<br> Exclusive <span class="purple">Offer.</span></h3>
+        <p class="modal__description">
+          Get 20% off on our premium services. Provide your email, and we'll send you the details to start your journey with us.
+        </p>
+        <img class="modal__image hidden" src="./src/images/Love.png" alt="love" id="promo-success-image">
+        
+        <!-- Success message -->
+        <p class="modal__success hidden" id="promo-success-message">
+          Thank you! Your exclusive offer details will be sent to your email.
+        </p>
+    
+        <form id="promo-form" class="modal__form">
+          <input
+            type="email"
+            class="modal__input"
+            placeholder="Enter your email"
+            required
+          />
+          <p class="modal__error">Please enter a valid email address.</p>
+          <button type="submit" class="modal__submit button button--primary">
+            Claim offer
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="employees img-left--2">
+      <div class="employees__text container">
+        <h2 class="employees__title">Empower your team<br> with innovative <span class="purple">solutions.</span></h2>
+        <p class="employees__description">Unleash creativity and expertise to transform your business ideas into impactful realities</p>
+      </div>
+      <div id="employees-container" class="employees-grid container"></div>
+    </div>
+
+    <div class="content img-right--1">
+      <div class="content__text">
+        <h2 class="content__title">Get better design result<br> without <span class="purple">limits.</span></h2>
+        <p class="content__description">Changing and overlapping them, you can quickly illustrate an idea of your startup</p>
+        <button class="button button--secondary">Download for free</button>
+      </div>
+      <img src="./src/images/Advertise.png" alt="Illustration" class="content__image">
+    </div>
+
+    <div class="opinions">
+      <div class="opinions__text container">
+        <h2 class="opinions__title">What our clients<br> say about <span class="purple">us.</span></h2>
+      </div>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper" id="opinions-container">
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="faq container">
+      <div class="faq__text container">
+        <h2 class="faq__title">Frequently asked<br> <span class="purple">questions.</span></h2>
+        <p class="faq__description">
+          Discover answers to the most common queries about our services and approach. If you have additional questions, don't hesitate to contact us for personalized assistance.
+        </p>
+      </div>
+    
+      <div id="faq-container" class="faq"></div>
+    </div>
+    
+    
+    
+    
+</main> 
+
+  <footer>
+    <div class="footer">
+
+      <div class="footer__title container">
+        <img src="./src/images/smash--logo.png" alt="logo smash"/>
+      </div >
+      <div class="footer__politics container">
+        <a href="#" alt="term of use">Term of use</a>
+        <a href="#" alt="Privacy policy">Privacy policy</a>
+        <a href="#" alt="License">License</a>
+        <a href="#" alt="License">Blog</a>
+      </div>
+
+      <p class="footer__copyright">© 2024 | Powered by Patricia González Pérez </p>
+
+    </div>
+  </footer>  
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./scripts/components/benefitsData.js"></script>
+<script src="./scripts/components/employees.js"></script>
+<script src="./scripts/components/opinions.js"></script>
+<script src="./scripts/components/faq.js"></script>
+<script src="./scripts/components/onScrollInit.js"></script>
+<script src="./scripts/app.js"></script>
+
+
+</body>
+
+</html>

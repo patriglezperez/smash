@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "name": "base",
+  "version": "1.0.0",
+  "description": "compilar : sass styles/main.scss styles/main.css compilar solo: sass --watch assets/scss/main.scss assets/css/main.css",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sass": "^1.82.0"
+  }
+}

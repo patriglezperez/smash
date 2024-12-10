@@ -1,0 +1,107 @@
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.purple {
+  color: $primary;
+}
+
+.yellow {
+  color: $secondary;
+}
+
+.img-left {
+  height: auto;
+  min-height: unset;
+  background-position: 0% 53.410422689273%;
+  background-size: contain;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/11/background-big-flip.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.img-left--2 {
+  height: auto;
+  min-height: unset;
+  background-position: 0% 50.80667213563%;
+  background-size: contain;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/07/background-different-1.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.img-right--2 {
+  height: auto;
+  min-height: unset;
+  background-position: 100% 54.910539885929%;
+  background-size: contain;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/11/background-big.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+
+.img-right--1 {
+  height: auto;
+  min-height: unset;
+  background-position: top right;
+  background-size: contain;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/11/background-big.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.img-center {
+  height: auto;
+  min-height: unset;
+  background-position: 44.762200808206% 100%;
+  background-size: contain;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/07/cropped-Untitled-1-4.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.img-center--2 {
+  height: auto;
+  min-height: unset;
+  background-position: 100% 54.910539885929%;
+  background-size: cover;
+  background-image: url(https://colibriwp.com/wp-content/uploads/2019/11/background-big.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  padding-bottom: 60px;
+
+  @media (min-width: $lg) {
+    background-size: contain;
+  }
+}
+
+.border-bg {
+  opacity: 1;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right-width: 0px;
+  border-right-style: none;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left-width: 0px;
+  border-left-style: none;
+  box-shadow: 0px 15px 40px 0px rgba(127, 0, 255, 0.2);
+}

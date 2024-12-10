@@ -1,0 +1,43 @@
+footer {
+  .footer {
+    padding: 1rem 0;
+    color: $light-bg;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+
+      img {
+        max-width: 100px;
+      }
+    }
+
+    &__politics {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      max-width: $sm-container;
+      margin: auto;
+      margin-bottom: 1rem;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      @media (min-width: $sm) {
+        flex-direction: row;
+      }
+      a {
+        color: $light-text;
+      }
+    }
+
+    &__copyright {
+      color: $light-text;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

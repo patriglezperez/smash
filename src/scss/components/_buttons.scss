@@ -1,0 +1,32 @@
+.button {
+  border: $btn-border;
+  cursor: $btn-cursor;
+  border-radius: $btn-radius;
+  transition: $btn-transition;
+  padding: $btn-padding;
+  text-align: center;
+
+  @media (min-width: $sm) {
+    max-width: $btn-max-width;
+  }
+}
+
+.button--primary {
+  background-color: $btn-bg;
+  color: $btn-color;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 0 0 5px #ee6b075f;
+  }
+}
+
+.button--secondary {
+  background-color: $btn-bg--secondary;
+  color: $btn-color--secondary;
+
+  &:hover {
+    box-shadow: 0 0 0 5px #3a9dce21;
+    color: $btn-color--secondary;
+  }
+}

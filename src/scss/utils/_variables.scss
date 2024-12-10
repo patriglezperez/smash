@@ -1,0 +1,69 @@
+/* Tipografía */
+$global-font-family: 'RecklessNeue-Regular', 'Times New Roman', Times, serif;
+
+/* Colores Principales */
+$primary: #b353cb;
+$secondary: #ffc435;
+
+/* Paleta de Colores */
+$color-orange: #ff4c3c;
+$color-blue-light: #f0f5fa;
+$color-blue-dark: #3e42ff;
+$color-white: #ffffff;
+$color-gray: #5d5d5d;
+
+/* Modos de Tema */
+$light-bg: $color-white; // Fondo claro
+$light-text: #121212; // Texto oscuro
+$dark-bg: #121212; // Fondo oscuro
+$dark-text: $color-white; // Texto claro
+
+/* Transiciones */
+$transition-speed: 0.3s;
+
+/* Contenedores */
+$container: 1200px;
+$sm-container: 600px;
+
+/* Breakpoints */
+$sm: 500px;
+$md: 768px;
+$lg: 1024px;
+
+/* Botones */
+$btn-bg: $color-orange;
+$btn-color: $light-bg;
+
+$btn-bg--secondary: $color-blue-light;
+$btn-color--secondary: $color-blue-dark;
+
+$btn-cursor: pointer;
+$btn-border: none;
+$btn-radius: 20px;
+$btn-padding: 0.7rem 2rem;
+$btn-transition: 0.3s;
+$btn-max-width: 200px;
+
+/* Modal */
+$modal-bg: $light-bg;
+$modal-text: $light-text;
+$modal-border-radius: 12px;
+
+:root {
+  --fs-menu-sm: 1rem;
+  --fs-modal: 1rem;
+  --fs-text-small: 1rem;
+  --fs-quote: 1rem;
+  --fs-fav: 2rem;
+  --fs-quote-title: 1.3rem;
+  --fs-text: 1.3rem;
+  --fs-modal-success: 1.3rem;
+  --fs-hero-title: 2.5rem;
+  --fs-modal-success: 1.3rem;
+}
+
+@media (min-width: $lg) {
+  :root {
+    --fs-hero-title: 3.5rem;
+  }
+}

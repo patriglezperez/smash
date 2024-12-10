@@ -1,0 +1,36 @@
+.card {
+  background-color: $secondary;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  &__image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: var(--f-size-subtitle);
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: var(--f-size-small);
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn {
+    padding: 0.7rem 1.2rem;
+    background-color: $primary;
+    color: $light-bg;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform $transition-speed;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $global-font-family;
+  background-color: $light-bg;
+  color: $light-text;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $global-font-family;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: $primary;
+  background-color: $color-white;
+  font-size: var(--fs-small);
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+/* Tema claro (por defecto) */
+body[data-theme='light'] {
+  --bg-color: #{$light-bg};
+  --text-color: #{$light-text};
+  --primary-color: #{$primary};
+  --secondary-color: #{$secondary};
+}
+
+/* Tema oscuro */
+body[data-theme='dark'] {
+  --bg-color: #{$dark-bg};
+  --text-color: #{$dark-text};
+  --primary-color: #{$primary};
+  --secondary-color: #{$secondary};
+  .img-left,
+  .img-left--2,
+  .img-right--1,
+  .img-right--2,
+  .img-center,
+  .img-center--2 {
+    background-image: none;
+    transition: background-image 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+}
+
+/* Aplicación de variables dinámicas */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color $transition-speed, color $transition-speed;
+}
+
+.theme__toggle .switch .slider {
+  background-color: var(--secondary-color);
+}
+
+.theme__toggle .switch .slider:before {
+  background-color: var(--primary-color);
+}
+
+/* Botones adaptados a los temas */
+// .button {
+//   background-color: var(--primary-color);
+//   color: var(--text-color);
+//   border-radius: $btn-radius;
+//   padding: $btn-padding;
+//   transition: background-color $btn-transition, color $btn-transition;
+// }
+
+// .button:hover {
+//   background-color: var(--secondary-color);
+//   color: var(--bg-color);
+// }
