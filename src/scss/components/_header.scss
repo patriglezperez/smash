@@ -54,7 +54,7 @@
 
   &__menu-toggle {
     border: none;
-    background-color: $light-bg;
+    background-color: transparent;
 
     &.header__menu-toggle--active .header__menu-icon {
       background-color: transparent;
