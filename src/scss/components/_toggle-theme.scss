@@ -1,6 +1,10 @@
 .theme__toggle {
   display: flex;
   justify-content: flex-end;
+  padding-block: 2rem;
+  position: relative;
+  right: 0;
+  top: 60px;
 
   .switch {
     font-size: 14px; // inicial 17

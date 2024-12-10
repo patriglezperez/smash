@@ -239,6 +239,10 @@ function renderBenefits(benefitsData, containerId) {
   const buttons = container.querySelectorAll('.button[data-group]')
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
+      buttons.forEach((btn) => btn.classList.remove('selected'))
+
+      button.classList.add('selected')
+
       const groupKey = button.getAttribute('data-group')
       renderBenefitGroup(
         benefitsData.groups[groupKey],
@@ -246,6 +250,8 @@ function renderBenefits(benefitsData, containerId) {
       )
     })
   })
+
+  buttons[0].classList.add('selected')
 }
 
 function renderBenefitGroup(groupItems, listContainer) {
@@ -422,7 +428,7 @@ function toggleFAQ(question) {
   }
 }
 
-// Función para alternar entre Dark/Light Mode
+// Función para alternate between Dark/Light Mode
 function toggleTheme() {
   const themeToggleInput = document.querySelector('.theme__toggle input') // Captura el checkbox
   if (!themeToggleInput) {

@@ -31,15 +31,12 @@ test('Clicking a question expands its answer', () => {
   const question = document.querySelector('.faq__question')
   const answer = document.getElementById('answer1')
 
-  // Mock inicial
   jest.spyOn(answer.style, 'maxHeight', 'get').mockReturnValueOnce('')
 
-  // Simula el clic para expandir
   question.click()
   jest.spyOn(answer.style, 'maxHeight', 'get').mockReturnValueOnce('100px')
   expect(answer.style.maxHeight).toBe('100px')
 
-  // Simula el clic para contraer
   question.click()
   jest.spyOn(answer.style, 'maxHeight', 'get').mockReturnValueOnce('')
   expect(answer.style.maxHeight).toBe('')

@@ -26,7 +26,12 @@
   color: $btn-color--secondary;
 
   &:hover {
+    color: $primary;
     box-shadow: 0 0 0 5px #3a9dce21;
-    color: $btn-color--secondary;
+  }
+
+  &.selected {
+    color: $primary;
+    transition: all 0.3s ease-in-out;
   }
 }
